@@ -13,12 +13,6 @@ body {
 .navbar {
     outline: 1px dotted red;
     width: 100%;
-    padding-left: auto;
-    padding-right: auto;
-}
-
-.navbar * {
-    transition-delay: 0.4s;
 }
 
 .navbar ul {
@@ -29,14 +23,16 @@ body {
     background: #000;
 }
 
-.navbar ul li {
+.navbar li {
     color: #fff;
     font-family: verdana;
-    display: inline;
+    display: block;
+    text-align: center;
+    text-decoration: none;
     float: left;
 }
 
-.navbar ul li:hover {
+.navbar li:hover {
     padding: 0 20px 0 20px;
     background-color: green;
 }
