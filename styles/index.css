@@ -4,8 +4,15 @@ body {
 
 #container {
     background-color: #222;
-    padding: 0 auto 0 auto;
+    padding-left: auto; 
+    padding-right: auto;
     width: 1080px;
+    height: 100%;
+}
+
+.navbar {
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .navbar * {
@@ -13,6 +20,19 @@ body {
     color: #fff;
     display: inline;
     transition-delay: 0.4s;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar ul li {
+    color: #fff;
+    font-family: verdana;
+    display: inline;
 }
 
 .navbar ul li:hover {
