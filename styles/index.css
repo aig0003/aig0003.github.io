@@ -6,24 +6,25 @@ body {
 
 #container {
     background-color: #222;
-    margin: 0 auto;
     width: 1080px;
     height: 100%;
+    margin: 0 auto;
 }
 
 #navbar {
-    background-color: blue;
+    background-color: #000;
     text-align: center;
 }
 
 ul {
     list-style: none;
     display: inline-block;
+    /*margin: 0; */
 }
 
 ul li {
     float: left;
-    margin: 0 20px;
+    margin: 0 50px;
 }
 
 ul li a {
@@ -38,5 +39,5 @@ li {
 
 li:hover {
     padding: 0 60px;
-    margin: 0 -15px;
+    background-image: linear-gradient(to right, #000, #333, #000);
 }
