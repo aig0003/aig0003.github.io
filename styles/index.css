@@ -1,11 +1,12 @@
 body {
     background-color: #444;
+    margin: 0;
+    padding: 0;
 }
 
 #container {
     background-color: #222;
-    padding: 10px;
-    margin: auto;
+    margin: 0 auto;
     width: 1080px;
     height: 100%;
 }
