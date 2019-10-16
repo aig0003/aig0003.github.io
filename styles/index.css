@@ -10,7 +10,7 @@ body {
     height: 100%;
 }
 
-.navbar {
+#navbar {
     background-color: blue;
     text-align: center;
 }
@@ -26,7 +26,8 @@ ul li {
 }
 
 ul li a {
-    color: white;
+    color: #fff;
+    text-decoration: none;
 }
 
 li {
@@ -35,5 +36,5 @@ li {
 }
 
 li:hover {
-    
+    padding: 0 20px;
 }
