@@ -4,8 +4,7 @@ body {
 
 #container {
     background-color: #222;
-    padding-left: auto; 
-    padding-right: auto;
+    padding: 10px;
     margin: auto;
     width: 1080px;
     height: 100%;
@@ -33,6 +32,8 @@ body {
     float: left;
     padding-left: auto;
     padding-right: auto;
+    transition-delay: .4s;
+    -webkit-transition-delay: .4s;
 }
 
 .navbar li:hover {
