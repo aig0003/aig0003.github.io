@@ -6,6 +6,7 @@ body {
     background-color: #222;
     padding-left: auto; 
     padding-right: auto;
+    margin: auto;
     width: 1080px;
     height: 100%;
 }
@@ -30,6 +31,8 @@ body {
     text-align: center;
     text-decoration: none;
     float: left;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .navbar li:hover {
