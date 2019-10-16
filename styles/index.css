@@ -9,6 +9,7 @@ body {
     width: 1080px;
     height: 100%;
     margin: 0 auto;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 #navbar {
@@ -40,4 +41,5 @@ li {
 li:hover {
     padding: 0 60px;
     background-image: linear-gradient(to right, #000, #333, #000);
+    font-size: 20px;
 }
