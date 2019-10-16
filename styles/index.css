@@ -11,32 +11,29 @@ body {
 }
 
 .navbar {
-    outline: 1px dotted red;
-    width: 100%;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: #000;
-}
-
-.navbar li {
-    color: #fff;
-    font-family: verdana;
-    display: block;
+    background-color: blue;
     text-align: center;
-    text-decoration: none;
-    float: left;
-    padding-left: auto;
-    padding-right: auto;
-    transition-delay: .4s;
-    -webkit-transition-delay: .4s;
 }
 
-.navbar li:hover {
-    padding: 0 20px 0 20px;
-    background-color: green;
+ul {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li {
+    float: left;
+    margin: 0 20px;
+}
+
+ul li a {
+    color: white;
+}
+
+li {
+    transition-duration: .4s;
+    -webkit-transition-duration: .4s;
+}
+
+li:hover {
+    
 }
