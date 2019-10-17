@@ -9,6 +9,13 @@
     /*outline: 1px dotted red;*/
  }
 
+html{
+    background-image: url("images/artsy-backlit-conceptual-1722072.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
  html, body, #container {
      min-height: 100% !important;
      height: 100%;
@@ -16,23 +23,29 @@
 
 body {
     /* background-image: linear-gradient(45deg, #ca2340, rgba(0, 0, 0, 1), #ca2340);
-    */background-color: #000;
+    */
+    background-color: rgb(0,0,0,0.9);
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
     position: relative;
  }
 
 #container {
-    background-color: #222;
-    width: calc(100% - 40px);
+    background-color: #111;
+    /*max-width: 1080px !important;*/
+    width: 100%;
     height: 100%;
     margin: 0 auto;
+    padding-top: 20px;
     opacity: 100%;
     font-family: OpenSans;
 }
 
 #navbar {
-    background-color: #000;
+    background-color: #111;
     text-align: center;
     padding: 0;
     height: auto;
@@ -77,8 +90,13 @@ li{
 hr {
     transition-duration: .4s;
     -webkit-transition-duration: .4s;
+    margin: 0 auto;
+}
+
+hr:not(.active) {
+    transition-duration: .4s;
+    -webkit-transition-duration: .4s;
     visibility:hidden;
-    margin: 0 auto 0 auto;
 }
 
 li:hover {
@@ -87,6 +105,8 @@ li:hover {
 }
 
 li:hover hr{
+    transition-duration: .4s;
+    -webkit-transition-duration: .4s;
     width: 100%;
     visibility: visible;
 }
