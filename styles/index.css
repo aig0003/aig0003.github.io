@@ -6,7 +6,7 @@
 * {
     padding: 0; margin: 0;
     color: #fff;
-    /*outline: 1px dotted red;*/
+    outline: 1px dotted red;
  }
 
 html{
@@ -14,20 +14,12 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    min-height: 100% !important;
+    height: 100%;
 }
 
- html, body, #container {
-     min-height: 100% !important;
-     height: 100%;
- }
-
 body {
-    /* background-image: linear-gradient(45deg, #ca2340, rgba(0, 0, 0, 1), #ca2340);
-    */
-    background-color: rgb(0,0,0,0.9);
-    opacity: 0.9;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-color: rgb(0,0,0,1);*/
     margin: 0;
     padding: 0;
     position: relative;
@@ -39,52 +31,55 @@ body {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    padding-top: 20px;
     opacity: 100%;
     font-family: OpenSans;
 }
 
-#navbar {
+#navbar, ul {
+    margin: 20px 0 0 0;
     background-color: #111;
     text-align: center;
     padding: 0;
     height: auto;
-    margin-bottom: -40px;
 }
 
 @media screen and (max-width:720px) {
-    #navbar ul li { float: none; }
+    #navbar ul li { float: none;}
     #container { width: 100%; }
 }
 
-#footer {
+/*#footer {
     background-color: #000;
     text-align: center;
     padding: 0;
     height: 40px;
     margin-top: -40px;
-}
+}*/
 
 ul {
     list-style: none;
     display: inline-block;
-    margin: 0;
+    overflow: hidden;
+    margin: 0 0 -4px 0;
 }
 
 ul li {
     float: left;
-    margin: 0 50px;
+    margin: 0 20px;
 }
 
 ul li a {
     color: #fff;
     text-decoration: none;
+    display: block;
+    overflow: hidden;
 }
 
 li{
     transition-duration: .4s;
     -webkit-transition-duration: .4s;
     padding: 10px 0 10px 0;
+    float: left;
 }
 
 hr {
@@ -100,7 +95,7 @@ hr:not(.active) {
 }
 
 li:hover {
-    padding: 10px 60px;
+    padding: 10px 30px;
     /*background-image: linear-gradient(to right, #000, #222, #000);*/
 }
 
@@ -112,15 +107,17 @@ li:hover hr{
 }
 
 #content {
-    padding: 40px 0;
-    height: calc(100% - 80px);
+    padding: 0;
+    background-color: green;
+    margin: auto 0;
+    height: calc(100%);
 }
 
 #content1, #content2 {
     width: 50%;
     float: left;
     text-align: center;
-    padding: 100px 0;
+    padding: auto 0;
     margin: 0 auto;
 }
 
