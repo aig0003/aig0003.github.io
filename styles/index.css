@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'OpenSans';
-    src: url('fonts/OpenSans-LightItalic.ttf') format('truetype');
+    src: url('fonts/OpenSans-Light.ttf') format('truetype');
 }
 
 * {
@@ -24,7 +24,7 @@ body {
 
 #container {
     background-color: #222;
-    width: 1080px;
+    width: calc(100% - 40px);
     height: 100%;
     margin: 0 auto;
     opacity: 100%;
@@ -35,8 +35,13 @@ body {
     background-color: #000;
     text-align: center;
     padding: 0;
-    height: 40px;
+    height: auto;
     margin-bottom: -40px;
+}
+
+@media screen and (max-width:720px) {
+    #navbar ul li { float: none; }
+    #container { width: 100%; }
 }
 
 #footer {
@@ -82,7 +87,7 @@ li:hover {
 }
 
 li:hover hr{
-    width: 100px;
+    width: 100%;
     visibility: visible;
 }
 
