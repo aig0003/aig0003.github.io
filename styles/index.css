@@ -6,7 +6,7 @@
 * {
     padding: 0; margin: 0;
     color: #fff;
-    outline: 1px dotted red;
+    /*outline: 1px dotted red;*/
  }
 
  html, body, #container {
@@ -63,15 +63,27 @@ ul li a {
     text-decoration: none;
 }
 
-li {
+li{
     transition-duration: .4s;
     -webkit-transition-duration: .4s;
     padding: 10px 0 10px 0;
 }
 
+hr {
+    transition-duration: .4s;
+    -webkit-transition-duration: .4s;
+    visibility:hidden;
+    margin: 0 auto 0 auto;
+}
+
 li:hover {
     padding: 10px 60px;
-    background-image: linear-gradient(to right, #000, #222, #000);
+    /*background-image: linear-gradient(to right, #000, #222, #000);*/
+}
+
+li:hover hr{
+    width: 100px;
+    visibility: visible;
 }
 
 #content {
