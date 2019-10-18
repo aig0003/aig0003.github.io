@@ -1,16 +1,19 @@
-function insert_navbar() {
-    //var class = "";
+function insert_navbar(nav_array) {
+    //var is_active = "";
     //if (current_page == "index.html") { class = "active";}
-    document.getElementById('container').innerHTML = 
-    '<div id="navbar">' +
-        '<ul>' +
-            '<li><a href="index.html">Home</a><hr class="active" align="left" height="1px" width="1%"></li>'+
-            '<li><a href="skills.html">Skills</a><hr align="left" height="1px" width="0px"></li>'+
-            '<li><a href="">Education</a><hr align="left" height="1px" width="0px"></li>'+
-            '<li><a href="">About</a><hr align="left" height="1px" width="0px"></li>'+
-            '<li><a href="">Contact</a><hr align="left" height="1px" width="0px"></li>'+
-        '</ul>'+
-    '</div>';
+    var i;
+    document.getElementById('navbar').innerHTML += '<ul id="navlist">';
+    for (i = 0; i < nav_array.length; i++) {
+
+        document.getElementById('navlist').innerHTML += 
+        '<li><a href="">' + nav_array[i] + '</a><hr class="" align="left" height="1px" width="0px"></li>';
+    }
+    document.getElementById('navbar').innerHTML += '</ul>';
+    /*for (i=0; i < nav_array.length;i++) {
+        document.getElementById('container').innerHTML += '<h1>Hi</h1>'
+    }*/
+
+    
 }
 
 
