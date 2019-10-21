@@ -1,25 +1,26 @@
 function insert_navbar(nav_array) {
-    //var is_active = "";
-    //if (current_page == "index.html") { class = "active";}
     var i;
     document.getElementById('navbar').innerHTML += '<ul id="navlist">';
     for (i = 0; i < nav_array.length; i++) {
-
         document.getElementById('navlist').innerHTML += 
         '<li><a href="skills.html">' + nav_array[i] + '</a><hr class="" align="left" height="1px" width="0px"></li>';
     }
-    document.getElementById('navbar').innerHTML += '</ul>';
-    /*for (i=0; i < nav_array.length;i++) {
-        document.getElementById('container').innerHTML += '<h1>Hi</h1>'
-    }*/
-
-    
+    document.getElementById('navbar').innerHTML += '</ul>';   
 }
 
-function change_backgroundcolor() {
-    alert("Hi");
+function set_background_image(orientation, colors) {
+    var orientation = 90;
+    var colors_str = ''
+    for (var i=0; i<colors.length;i++) {
+        if(i<colors.length-1) {colors_str += colors[i] + ',';
+        } else {colors_str += colors[i];}
+    }
+    alert(colors_str);
+    document.body.style.backgroundImage = 'linear-gradient('+orientation+'deg,' + colors_str +')';
+}
 
-    document.body.style.backgroundImage = "linear-gradient(to right,rgba(255, 1, 234, 0.8) 0% ,rgba(0,0,0,1) 100%)";
+function get_background_image() {
+    alert(getComputedStyle(document.body).backgroundImage);
 }
 
 function get_current_page() {
