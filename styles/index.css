@@ -48,9 +48,14 @@ body {
     height: auto;
 }
 
+
 @media screen and (max-width:720px) {
     #navbar ul li { float: none;}
     #container { width: 100%; }
+}
+
+input {
+    color: black;
 }
 
 /*#footer {

@@ -30,3 +30,20 @@ function get_current_page() {
     document.getElementById('content').innerHTML = "<p>" + page + "</p>";
     return page;
 }
+
+function rgba_input(){
+    var r = document.createElement("INPUT");
+    var g = document.createElement("INPUT");
+    var b = document.createElement("INPUT");
+    var a = document.createElement("INPUT");
+    var inputs = [r,g,b,a];
+    for(var i=0; i < inputs.length; i++) {
+        inputs[i].setAttribute("class","color");
+        inputs[i].setAttribute("type","number");
+        inputs[i].setAttribute("min","0");
+        inputs[i].setAttribute("max","255");
+        document.body.appendChild(inputs[i]);
+    }
+    var string = "rgba()";
+    return ;
+}
